@@ -17,7 +17,7 @@ namespace GameStates {
 		private Quaternion cameraRotation;
 		private Quaternion cueRotation;
         private int time = 0;
-        private int X1 = 40, X2 = -28, Z1 = 70, Z2 = -80;
+      //  private int X1 = 40, X2 = -28, Z1 = 70, Z2 = -80;
         private Vector3 originalCueBallPosition;
         private int cueBallBeginPosition = 0;
         private Vector3 begingPositin  = new Vector3();            
@@ -123,7 +123,7 @@ namespace GameStates {
 
        
 
-        private void CheckRangeOfCueBall(Rigidbody cueBallBody)
+   /*     private void CheckRangeOfCueBall(Rigidbody cueBallBody)
         {
             if (cueBallBody.position.z < Z2 || cueBallBody.position.z > Z1 || cueBallBody.position.x < X2 || cueBallBody.position.x > X1)
                     {
@@ -141,7 +141,7 @@ namespace GameStates {
                     }
             
 
-        }
+        }*/
 
         private Rigidbody CheckIfToLetGravity(Rigidbody cueBallBody)
         {

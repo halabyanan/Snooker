@@ -29,10 +29,7 @@ namespace GameStates {
              
 			var distance = Vector3.Distance(cue.transform.position, cueBall.transform.position);
 			if (distance < PoolGameController.MIN_DISTANCE || distance > PoolGameController.MAX_DISTANCE)
-				cueDirection *= -1;
-           
-               
-
+				cueDirection *= -1;         
 
 			cue.transform.Translate(Vector3.down * speed * cueDirection * Time.fixedDeltaTime);
 		}
